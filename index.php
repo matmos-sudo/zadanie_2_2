@@ -48,14 +48,11 @@
         </div>
       </section>
     </main>
-    
-
-    <?php include "parts/footer.php" ?>
-    <?php $filepath = "parts/footer.php";
-    if(!include $filepath){
-        echo"Failed to include $filepath";
-    }?>
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
 </body>
+<?php include $filepath = "parts/footer.php";
+if(!include $filepath){
+    echo"Failed to include $filepath";
+}?>
 </html>
